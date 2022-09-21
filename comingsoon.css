@@ -18,23 +18,13 @@ body {
   overflow-x: hidden;
 }
 
-h1 {
-  font-family: "Bluenesia", sans-serif;
-  color: var(--red);
-}
-
-h2{
-  font-family: "Bluenesia", sans-serif;
-  font-size: 40px;
-  color: var(--white);
-}
-
 h3 {
   font-family: "Bluenesia", sans-serif;
   font-size: 30px;
   color: var(--orange);
   margin-top: 30px;
   margin-bottom: 30px;
+  letter-spacing: 3px;
 }
 
 p{
