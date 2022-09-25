@@ -1,0 +1,463 @@
+:root {
+  --red: #E61C31;
+  --orange: #FF9F1C;
+  --black: #1A1A1A;
+  --blue: #28AFB0;
+  --white: #FFFFFF;
+}
+
+@font-face {
+  font-family: "Bluenesia";
+  src: url("fonts/Bluenesia.ttf");
+}
+.fade{
+  opacity: 0%;
+}
+body {
+  margin: 0;
+  background: var(--black);
+  color: var(--white);
+  height: 100%;
+}
+
+#logo, #navigatie{
+  opacity:0%;
+  animation: fade-in 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  from{
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-family: "Bluenesia", sans-serif;
+    color: var(--red);
+  }
+
+  h2 {
+    font-family: "Bluenesia", sans-serif;
+    font-size: 40px;
+    color: var(--white);
+  }
+
+  h3 {
+    font-family: "Bluenesia", sans-serif;
+    font-size: 30px;
+    color: var(--orange);
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+  }
+
+  /* HOME */
+  #home {
+    display: flex;
+    margin: auto;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    flex-direction: column;
+  }
+
+  #logo {
+    display: block;
+    margin: auto;
+    width: 25%;
+  }
+
+  #navigatie {
+    margin-top: 3%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  #navigatie a {
+    font-family: "Bluenesia";
+    font-size: 30px;
+    color: var(--white);
+    text-decoration: none;
+    margin: 30px;
+  }
+
+  #navigatie a:hover {
+    color: var(--blue);
+  }
+
+  #pijl {
+    display: none;
+  }
+
+  /* OVER */
+  #over {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  #over p {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #teamleden {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #teamleden>div {
+    margin: 10px;
+    color: var(--black);
+  }
+
+  .tekst {
+    background-color: var(--white);
+    padding: 10px;
+    width: 200px;
+    height: 460px
+  }
+
+  .naam {
+    font-size: 24px;
+    margin-bottom: 0px;
+  }
+
+  .foto {
+    width: 200px;
+    transform: translateY(4px);
+  }
+
+  /* DIENSTEN */
+  #diensten p {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #diensten {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+  }
+
+  .lijst {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .item {
+    display: flex;
+    flex-basis: 33%;
+    justify-content: center;
+  }
+
+  .lijst img {
+    width: 30px;
+  }
+
+  .lijst .item h2 {
+    font-size: 30px;
+    margin-left: 20px
+  }
+
+  #button {
+    font-family: "Manrope";
+    font-size: 16px;
+    color: var(--white);
+    text-decoration: none;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: var(--blue);
+  }
+
+  #button:hover {
+    background-color: var(--orange);
+  }
+
+  /* CONTACT */
+  #contact p {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #contact {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+
+  #form {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .contactitem {
+    display: flex;
+    justify-content: center;
+    flex-basis: 33%;
+  }
+
+  .contactitem a {
+    font-family: "Manrope";
+    font-size: 16px;
+    margin-left: 20px;
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  .contactitem img {
+    width: 20px;
+  }
+
+  #wrapper {
+    overflow: hidden;
+    bottom: -5px;
+  }
+
+  #wrapper img {
+    width: auto;
+    height: 10%;
+    transform: translateX(-100px)
+  }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-family: "Bluenesia", sans-serif;
+    color: var(--red);
+  }
+
+  h2 {
+    font-family: "Bluenesia", sans-serif;
+    font-size: 30px;
+    color: var(--white);
+  }
+
+  h3 {
+    font-family: "Bluenesia", sans-serif;
+    font-size: 20px;
+    color: var(--orange);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-family: "Manrope", sans-serif;
+    font-size: 12px;
+  }
+
+  /* HOME */
+  #home {
+    display: flex;
+    margin: auto;
+    padding-top: 50%;
+    padding-bottom: 40%;
+    flex-direction: column;
+  }
+
+  #logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  #navigatie {
+    text-align: center;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #navigatie h3 {
+    display: none;
+  }
+
+  #navigatie a {
+    font-family: "Bluenesia";
+    font-size: 20px;
+    color: var(--white);
+    text-decoration: none;
+    margin: 10px;
+  }
+
+  #navigatie a:hover {
+    color: var(--blue);
+  }
+
+  #pijl {
+    margin: auto;
+    margin-top: 40%;
+    font-size: 50px;
+    width: 50px;
+  }
+
+  /* OVER */
+  #over {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+
+  #over p {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #teamleden {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #teamleden>div {
+    margin: 10px;
+    color: var(--black);
+  }
+
+  .tekst {
+    background-color: var(--white);
+    padding: 10px;
+  }
+
+  .naam {
+    font-size: 24px;
+    margin-bottom: 0px;
+  }
+
+  .foto {
+    width: 60%;
+    transform: translateY(4px);
+  }
+
+  /* DIENSTEN */
+  #diensten p {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #diensten {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 150px;
+    padding-bottom: 120px;
+    text-align: center;
+  }
+
+  .item {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    transform: translateX(-10px);
+  }
+
+  .lijst {
+    margin-bottom: 50px;
+  }
+
+  .lijst img {
+    width: 20px;
+  }
+
+  .lijst .item h2 {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  #button {
+    font-family: "Manrope";
+    font-size: 16px;
+    color: var(--white);
+    text-decoration: none;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: var(--blue);
+  }
+
+  #button:hover {
+    background-color: var(--orange);
+  }
+
+  /* CONTACT */
+  #contact p {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #contact {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 130px;
+    padding-bottom: 220px;
+    text-align: center;
+  }
+
+  #form {
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 30px;
+  }
+
+  .contactitem {
+    display: flex;
+    justify-content: center;
+    flex-basis: 33%;
+    margin: 10px;
+  }
+
+  .contactitem a {
+    font-family: "Manrope";
+    font-size: 16px;
+    margin-left: 10px;
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  .contactitem img {
+    width: 20px;
+  }
+
+  #wrapper {
+    overflow: hidden;
+    bottom: -5px;
+  }
+
+  #wrapper img {
+    width: auto;
+    height: 150px;
+    transform: translateX(-200px)
+  }
+}

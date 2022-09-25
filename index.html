@@ -4,20 +4,222 @@
 <head>
   <meta charset="utf-8">
   <meta name="description" content="STUDIO BRANDLOS!">
-  <meta name="keywords" content="grapic design, grafisch ontwerp, illustraties, logo">
+  <meta name="keywords" content="graphic design, grafisch ontwerp, illustraties, logo">
   <meta name="author" content="Romy van Rossum">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="comingsoon.css">
+  <link rel="stylesheet" href="index.css">
   <link rel="icon" type="image/x-icon" href="images/favicon.svg">
   <link href="https://fonts.googleapis.com/css?family=Manrope" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 
   <title>STUDIO BRANDLOS!</title>
 </head>
 
 <body>
   <div id="home">
-    <img id="logo" src="images/logo.svg" alt="">
+    <img id="logo" src="images/logo.svg" alt="Logo Brandlos">
 
-  <h3>COMING SOON ...</h3>
+    <div id="navigatie">
+      <a href="#over">DIT IS BRANDLOS!</a>
+      <h3> / </h3>
+      <a href="#diensten">WAT WE DOEN</a>
+      <h3> / </h3>
+      <a href="#contact">CONTACT</a>
+    </div>
+
+    <img src="images/pijl.svg" id="pijl" alt="Pijltje">
+  </div>
+
+  <div id="over">
+    <h2 class="fade">DIT IS BRANDLOS!</h2>
+    <p class="fade">Studio Brandlos staat voor: zich uitspreken over onderwerpen die anderen niet durven aan te snijden. Ons vermogen vele concepten te genereren is de vaardigheid waarmee wij manoeuvreren door de oneindigheid aan grafische
+      variatie. Vandaar ons
+      motto: Brandlos!</p>
+
+    <div id="teamleden">
+      <div class="bio fade">
+        <img class="foto" src="images/romy.png" alt="Romy van Rossum">
+        <div class="tekst">
+          <h3 class="naam"> ROMY </h3>
+          <p>Heyy! Ik ben Romy en ik studeer Communicatie & Multimedia Design in Den Bosch. Tijdens mijn opleiding en tijdens mijn stage afgelopen jaar heb ik het een en ander geleerd over grafisch ontwerp, maar ik merkte dat ik hier meer over wilde
+            leren. Vandaar dat ik de minor Graphic Design heb gekozen.</p>
+        </div>
+      </div>
+
+      <div class="bio fade">
+        <img class="foto" src="images/bas.png" alt="Bas Houtschilt">
+        <div class="tekst">
+          <h3 class="naam"> BAS </h3>
+          <p>Hoi! Mijn naam is Bas en ben vierdejaars student SportMarketing & Management aan de Hogeschool Rotterdam. Tijdens deze opleiding ben ik erachter gekomen dat ik graag bezig ben met vormgeven. Om hier meer over te leren en nog beter in te
+            worden heb ik ervoor gekozen om de minor Graphic Design te volgen.</p>
+        </div>
+      </div>
+
+      <div class="bio fade">
+        <img class="foto" src="images/wieske.png" alt="Wieske Nieland">
+        <div class="tekst">
+          <h3 class="naam"> WIESKE </h3>
+          <p> Hoooooooooi! Ik ben Wieske, 23 jaar en ik studeer Voeding en Diëtetiek in den Haag. Normaal woon ik in Leiden, maar voor deze minor besloot ik een half jaartje naar Tilburg te verhuizen. Tijdens het studeren merkte ik namelijk dat ik
+            het heel erg miste om creatief bezig te zijn. Via deze minor hoop ik hier meer over te leren.</p>
+        </div>
+      </div>
+
+      <div class="bio fade">
+        <img class="foto" src="images/michelle.png" alt="Michelle Michels">
+        <div class="tekst">
+          <h3 class="naam"> MICHELLE </h3>
+          <p>Hoi, Michelle hier! Ik studeer Trend Research & Concept Creation in Lifestyle. Mijn passie heeft altijd al gelegen bij creatief bezig zijn, tijdens mijn opleiding is dit alleen maar gegroeid vandaar dat ik de minor Graphic Design ben
+            gaan volgen. Ik vind het belangrijk om met mijn ontwerpen wat te kunnen betekenen voor anderen.</p>
+        </div>
+      </div>
+
+      <div class="bio fade">
+        <img class="foto" src="images/coen.png" alt="Coen Muller">
+        <div class="tekst">
+          <h3 class="naam"> COEN </h3>
+          <p>Hallo, ik ben Coen (21) en studeer industrieel product ontwerp in Rotterdam. Ik geloof dat het verband tussen vormgeving en techniek de sleutel is tot een goed ontwerp. Vandaar dat Ik mijn grafische skills flink wil bijspijkeren. En geen
+            plek is hier zo goed in als Studio Brandlos!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="diensten">
+    <h2 class="fade">WAT WE DOEN</h2>
+    <p class="fade">Dit zijn onze voornaamste werkzaamheden. Iets anders in gedachten? Neem gerust contact met ons op en we kijken wat we voor je kunnen betekenen!</p>
+
+    <div class="lijst fade">
+      <div class="item">
+        <img src="images/driehoek.svg" alt="driehoek">
+        <h2>HUISSTIJL ONTWERPEN</h2>
+      </div>
+
+      <div class="item">
+        <img src="images/rondje.svg" alt="rondje">
+        <h2>LOGO'S ONTWERPEN</h2>
+      </div>
+
+      <div class="item">
+        <img src="images/ster.svg" alt="ster">
+        <h2>CAMPAGNES VOEREN</h2>
+      </div>
+
+      <div class="item">
+        <img src="images/Swiggles-02.svg" alt="driehoek">
+        <h2>SOCIAL MEDIA CONTENT</h2>
+      </div>
+
+      <div class="item">
+        <img src="images/kronkel.svg" alt="kronkel">
+        <h2>DRUKWERK (O.A. POSTERS)</h2>
+      </div>
+
+      <div class="item">
+        <img src="images/plus.svg" alt="plus">
+        <h2>ILLUSTRATIES</h2>
+      </div>
+    </div>
+
+    <a href="#contact" id="button" class="fade">Contact</a>
+
+
+  </div>
+
+  <div id="contact">
+    <h2 class="fade">CONTACT</h2>
+    <p class="fade">Geïnteresseerd in één van onze werkzaamheden of wil je meer weten? Neem vrijblijvend contact met ons op door ons te bellen of ons een e-mail te sturen.</p>
+
+    <div id="form" class="fade">
+
+      <div class="contactitem">
+        <img src="images/phone.svg" alt="telefoon">
+        <a href="tel:0615590899">+31 6 155 908 99</a>
+      </div>
+
+      <div class="contactitem">
+        <img src="images/email.svg" alt="email">
+        <a href="mailto:studiobrandlos@gmail.com">studiobrandlos@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="wrapper">
+    <img src="images/vlammen.svg" id="vlammen" alt="vlammen">
+  </div>
+
+
+  <script>
+    // ARROW ANIMATION
+    var animation = anime({
+      targets: '#pijl',
+      translateY: 20,
+      direction: 'alternate',
+      loop: true,
+      easing: 'easeInOutQuad',
+      autoplay: false
+    });
+
+    function loop(t) {
+      animation.tick(t);
+      customRAF = requestAnimationFrame(loop);
+    }
+
+    requestAnimationFrame(loop);
+
+    //FADE IN - Source: https://codepen.io/annalarson/pen/AegVzq
+    $(function() { // $(document).ready shorthand
+      $('.monster').fadeIn('slow');
+    });
+    $(document).ready(function() {
+
+      /* Every time the window is scrolled ... */
+      $(window).scroll(function() {
+
+        /* Check the location of each desired element */
+        $('.fade').each(function(i) {
+
+          var bottom_of_object = $(this).position().top - $(this).outerHeight();
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+
+          if (bottom_of_window > bottom_of_object) {
+
+            $(this).animate({
+              'opacity': '1'
+            }, 1000);
+
+          }
+
+        });
+
+      });
+
+    });
+
+    // SCROLL - Source: https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
+    $(document).ready(function() {
+      $("a").on('click', function(event) {
+
+        if (this.hash !== "") {
+          event.preventDefault();
+
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function() {
+
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+  </script>
+
+</body>
+
 </html>
