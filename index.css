@@ -279,7 +279,7 @@ body {
   #home {
     display: flex;
     margin: auto;
-    padding-top: 50%;
+    padding-top: 30%;
     padding-bottom: 40%;
     flex-direction: column;
   }
