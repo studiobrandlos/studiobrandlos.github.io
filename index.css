@@ -272,7 +272,7 @@ body {
 
   p {
     font-family: "Manrope", sans-serif;
-    font-size: 12px;
+    font-size: 16px;
   }
 
   /* HOME */
@@ -317,7 +317,7 @@ body {
 
   #pijl {
     margin: auto;
-    margin-top: 40%;
+    margin-top: 20%;
     font-size: 50px;
     width: 50px;
   }
