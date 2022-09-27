@@ -209,6 +209,7 @@ body {
 
   #form {
     display: flex;
+    flex-wrap: no-wrap;
     flex-basis: 50%;
     justify-content: center;
     padding-left: 20%;
@@ -218,13 +219,13 @@ body {
   .contactitem {
     display: flex;
     justify-content: center;
-    flex-basis: 33%;
+    flex-basis: 50%;
   }
 
   .contactitem a {
     font-family: "Manrope";
     font-size: 16px;
-    margin-left: 20px;
+    margin-left: 12px;
     color: var(--white);
     text-decoration: none;
   }
@@ -241,7 +242,7 @@ body {
   #wrapper img {
     width: auto;
     height: 10%;
-    transform: translateX(-100px)
+    transform: translateX(-100px);
   }
 }
 
